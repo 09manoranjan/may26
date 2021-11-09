@@ -1,0 +1,21 @@
+<div class="container-fluid mt-5">
+
+   <h3>Top Tech News</h3>
+   <div class="row">
+
+      <div class="col-lg-6 mt-3 mb-3" *ngFor="let tech of topTechNews">
+
+         <div class="box"> <!--*ngIf="tech.urlToImage != null"> -->
+            <div class="mt-1 mb-1"><img src="{{tech.urlToImage}}" width="100%"></div>
+            <h4 class="mt-2 mb-2">{{tech.title}}</h4>
+            <p>{{tech.description}}</p>
+            <a href="{{tech.url}}" target="_blank" class="btn btn-dark btn-sm mt-2">Read More</a>
+
+         </div>
+
+
+      </div>
+
+   </div>
+
+</div>
